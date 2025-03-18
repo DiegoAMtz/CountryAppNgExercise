@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "storybook": "ng run CountryApp:storybook",
+    "build-storybook": "ng run CountryApp:build-storybook"
   },
   "private": true,
   "dependencies": {
@@ -29,13 +31,28 @@
     "@angular-devkit/build-angular": "^19.2.1",
     "@angular/cli": "^19.2.1",
     "@angular/compiler-cli": "^19.2.0",
+    "@chromatic-com/storybook": "^3.2.6",
+    "@compodoc/compodoc": "^1.1.26",
+    "@storybook/addon-docs": "^8.6.7",
+    "@storybook/addon-essentials": "^8.6.7",
+    "@storybook/addon-interactions": "^8.6.7",
+    "@storybook/addon-onboarding": "^8.6.7",
+    "@storybook/addon-styling-webpack": "^1.0.1",
+    "@storybook/addon-themes": "^8.6.7",
+    "@storybook/angular": "^8.6.7",
+    "@storybook/blocks": "^8.6.7",
+    "@storybook/test": "^8.6.7",
     "@types/jasmine": "~5.1.0",
+    "css-loader": "^7.1.2",
     "jasmine-core": "~5.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "postcss-loader": "^8.1.1",
+    "storybook": "^8.6.7",
+    "style-loader": "^4.0.0",
     "typescript": "~5.7.2"
   }
 }

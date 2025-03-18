@@ -1,0 +1,2186 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "CapitalInfo",
+            "id": "interface-CapitalInfo-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "latlng",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 40
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Car",
+            "id": "interface-Car-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "side",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 45
+                },
+                {
+                    "name": "signs",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 44
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "CoatOfArms",
+            "id": "interface-CoatOfArms-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "png",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 49
+                },
+                {
+                    "name": "svg",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 50
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Country",
+            "id": "interface-Country-b5a49eb2bdb7ea65649125791d46715cc5f656dc89dea47f557918dd76f7aa06e7ef3d86222e1ae912746f3b3e14ce1d18c882f21ca6d8b3d11bde002d1c3367",
+            "file": "src/app/country/interfaces/country.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Country {\n  id: string;\n  flag: string;\n  flagSvg: string;\n  name: string;\n  capital: string;\n  population: number;\n}\n",
+            "properties": [
+                {
+                    "name": "capital",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "flag",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "flagSvg",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "population",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Currencies",
+            "id": "interface-Currencies-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "eur",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Eur",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 54
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Demonyms",
+            "id": "interface-Demonyms-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "eng",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Eng",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 63
+                },
+                {
+                    "name": "fra",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Eng",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 64
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Eng",
+            "id": "interface-Eng-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "f",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 68
+                },
+                {
+                    "name": "m",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 69
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Eur",
+            "id": "interface-Eur-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 58
+                },
+                {
+                    "name": "symbol",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 59
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Flags",
+            "id": "interface-Flags-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "alt",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 75
+                },
+                {
+                    "name": "png",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 73
+                },
+                {
+                    "name": "svg",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 74
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Gini",
+            "id": "interface-Gini-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "the2018",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 79
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Idd",
+            "id": "interface-Idd-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "root",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 83
+                },
+                {
+                    "name": "suffixes",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 84
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Languages",
+            "id": "interface-Languages-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "est",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 88
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Maps",
+            "id": "interface-Maps-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "googleMaps",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 92
+                },
+                {
+                    "name": "openStreetMaps",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 93
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Name",
+            "id": "interface-Name-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "common",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 97
+                },
+                {
+                    "name": "nativeName",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "NativeName",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 99
+                },
+                {
+                    "name": "official",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 98
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "NativeName",
+            "id": "interface-NativeName-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "est",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Translation",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 103
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "PostalCode",
+            "id": "interface-PostalCode-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "format",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 112
+                },
+                {
+                    "name": "regex",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 113
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "RestCountries",
+            "id": "interface-RestCountries-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "altSpellings",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "area",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "borders",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "capital",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "capitalInfo",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "CapitalInfo",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 35
+                },
+                {
+                    "name": "car",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Car",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 29
+                },
+                {
+                    "name": "cca2",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "cca3",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "ccn3",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "cioc",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "coatOfArms",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "CoatOfArms",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 33
+                },
+                {
+                    "name": "continents",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 31
+                },
+                {
+                    "name": "currencies",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Currencies",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "demonyms",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Demonyms",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                },
+                {
+                    "name": "fifa",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 28
+                },
+                {
+                    "name": "flag",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                },
+                {
+                    "name": "flags",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Flags",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 32
+                },
+                {
+                    "name": "gini",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Gini",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                },
+                {
+                    "name": "idd",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Idd",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "independent",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                },
+                {
+                    "name": "landlocked",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "languages",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Languages",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "latlng",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "maps",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Maps",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Name",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "population",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                },
+                {
+                    "name": "postalCode",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "PostalCode",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 36
+                },
+                {
+                    "name": "region",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "startOfWeek",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 34
+                },
+                {
+                    "name": "status",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                },
+                {
+                    "name": "subregion",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "timezones",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 30
+                },
+                {
+                    "name": "tld",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "translations",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                },
+                {
+                    "name": "unMember",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Translation",
+            "id": "interface-Translation-06f01935f733c03cc044b5a088b4a28a4932b7f2dd6544e815e10321f75e18751bdd8e1916b3a83fbabc5496f59275d42aaa1912e4a6ea8c100328c2aa4f3b33",
+            "file": "src/app/country/interfaces/rest-countries.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface RestCountries {\n  name:         Name;\n  tld:          string[];\n  cca2:         string;\n  ccn3:         string;\n  cca3:         string;\n  cioc:         string;\n  independent:  boolean;\n  status:       string;\n  unMember:     boolean;\n  currencies:   Currencies;\n  idd:          Idd;\n  capital:      string[];\n  altSpellings: string[];\n  region:       string;\n  subregion:    string;\n  languages:    Languages;\n  translations: { [key: string]: Translation };\n  latlng:       number[];\n  landlocked:   boolean;\n  borders:      string[];\n  area:         number;\n  demonyms:     Demonyms;\n  flag:         string;\n  maps:         Maps;\n  population:   number;\n  gini:         Gini;\n  fifa:         string;\n  car:          Car;\n  timezones:    string[];\n  continents:   string[];\n  flags:        Flags;\n  coatOfArms:   CoatOfArms;\n  startOfWeek:  string;\n  capitalInfo:  CapitalInfo;\n  postalCode:   PostalCode;\n}\n\nexport interface CapitalInfo {\n  latlng: number[];\n}\n\nexport interface Car {\n  signs: string[];\n  side:  string;\n}\n\nexport interface CoatOfArms {\n  png: string;\n  svg: string;\n}\n\nexport interface Currencies {\n  eur: Eur;\n}\n\nexport interface Eur {\n  name:   string;\n  symbol: string;\n}\n\nexport interface Demonyms {\n  eng: Eng;\n  fra: Eng;\n}\n\nexport interface Eng {\n  f: string;\n  m: string;\n}\n\nexport interface Flags {\n  png: string;\n  svg: string;\n  alt: string;\n}\n\nexport interface Gini {\n  the2018: number;\n}\n\nexport interface Idd {\n  root:     string;\n  suffixes: string[];\n}\n\nexport interface Languages {\n  est: string;\n}\n\nexport interface Maps {\n  googleMaps:     string;\n  openStreetMaps: string;\n}\n\nexport interface Name {\n  common:     string;\n  official:   string;\n  nativeName: NativeName;\n}\n\nexport interface NativeName {\n  est: Translation;\n}\n\nexport interface Translation {\n  official: string;\n  common:   string;\n}\n\nexport interface PostalCode {\n  format: string;\n  regex:  string;\n}\n",
+            "properties": [
+                {
+                    "name": "common",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 108
+                },
+                {
+                    "name": "official",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 107
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        }
+    ],
+    "injectables": [
+        {
+            "name": "CountryService",
+            "id": "injectable-CountryService-09ab2d3edbbaec18a8c1ff07c70cdcdfd8484947d1604c3d637c533ea5a1d57c0c5e5fbe3a36e2eb0b0db260887e36d24e96156540d5e5fed2104de442a87978",
+            "file": "src/app/country/services/country.service.ts",
+            "properties": [
+                {
+                    "name": "httpClient",
+                    "defaultValue": "inject(HttpClient)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "searchByCapital",
+                    "args": [
+                        {
+                            "name": "query",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<Country[]>",
+                    "typeParameters": [],
+                    "line": 15,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "query",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "searchByCountry",
+                    "args": [
+                        {
+                            "name": "query",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<Country[]>",
+                    "typeParameters": [],
+                    "line": 25,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "query",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import {inject, Injectable} from '@angular/core';\nimport {HttpClient} from '@angular/common/http';\nimport {catchError, map, Observable, throwError} from 'rxjs';\nimport {environment} from '../../../environments/environment';\nimport {RestCountries} from '../interfaces/rest-countries.interface';\nimport {Country} from '../interfaces/country.interface';\nimport {CountryMapper} from '../mappers/country-mapper';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class CountryService {\n  private httpClient = inject(HttpClient);\n\n  searchByCapital(query: string): Observable<Country[]> {\n    return this.httpClient.get<RestCountries[]>(`${environment.apiUrl}/capital/${query?.toLowerCase()}`).pipe(\n      map(countries => CountryMapper.mapToCountries(countries)),\n      catchError(err => {\n        console.log(err);\n        return throwError(() => new Error(`No se pudieron obtener paises con la capital ${query}`));\n      })\n    );\n  }\n\n  searchByCountry(query: string): Observable<Country[]> {\n    return this.httpClient.get<RestCountries[]>(`${environment.apiUrl}/name/${query?.toLowerCase()}`).pipe(\n      map(countries => CountryMapper.mapToCountries(countries)),\n      catchError(err => {\n        console.log(err);\n        return throwError(() => new Error(`No se pudieron obtener paises con el nombre ${query}`));\n      })\n    );\n  }\n}\n",
+            "extends": [],
+            "type": "injectable"
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [
+        {
+            "name": "CountryMapper",
+            "id": "class-CountryMapper-44a01c5dad17078cdc28c19e976855d5406af3af6f22d1b771ea423868b244456021573366222578f024b29eb29a1f46a347446f167171ba3f77d3c1ef1ffa3c",
+            "file": "src/app/country/mappers/country-mapper.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "import {RestCountries} from '../interfaces/rest-countries.interface';\nimport {Country} from '../interfaces/country.interface';\n\nexport class CountryMapper {\n  static mapToCountry(country: RestCountries): Country {\n    return {\n      id: country.idd.root,\n      name: country.translations['spa']?.common ?? country.name.common,\n      flag: country.flag,\n      flagSvg: country.flags.svg,\n      capital: country.capital.join(', '),\n      population: country.population\n    }\n  }\n\n  static mapToCountries(countries: RestCountries[]): Country[] {\n    return countries.map(CountryMapper.mapToCountry);\n  }\n}\n",
+            "inputsClass": [],
+            "outputsClass": [],
+            "properties": [],
+            "methods": [
+                {
+                    "name": "mapToCountries",
+                    "args": [
+                        {
+                            "name": "countries",
+                            "type": "RestCountries[]",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Country[]",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        126
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "countries",
+                            "type": "RestCountries[]",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "mapToCountry",
+                    "args": [
+                        {
+                            "name": "country",
+                            "type": "RestCountries",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Country",
+                    "typeParameters": [],
+                    "line": 5,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        126
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "country",
+                            "type": "RestCountries",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "indexSignatures": [],
+            "extends": [],
+            "hostBindings": [],
+            "hostListeners": []
+        }
+    ],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-148fce251495b698f09eace370da9f5e6ef3b8158bdb4da3f63970644f2526eced455b2c85760e771dd68f9649df3a4e420b88335ba019ad6448bc5117a05cea",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "RouterOutlet"
+                },
+                {
+                    "name": "FooterCustomComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component} from '@angular/core';\nimport {RouterOutlet} from '@angular/router';\nimport {FooterCustomComponent} from './shared/components/footer-custom/footer-custom.component';\n\n@Component({\n  selector: 'app-root',\n  imports: [\n    RouterOutlet,\n    FooterCustomComponent\n  ],\n  templateUrl: './app.component.html'\n})\nexport class AppComponent {\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<main class=\"m-auto flex-grow flex flex-col min-h-screen\">\n  <router-outlet></router-outlet>\n  <div class=\"flex-1 flex-grow\"></div>\n  <footer-custom></footer-custom>\n</main>\n"
+        },
+        {
+            "name": "ByCapitalPageComponent",
+            "id": "component-ByCapitalPageComponent-4be9cefdd59cf1138802718d90ddfbd43285f8e33949fbfb76223ab1a5623b7aacd1258aea9ef27bb62637aba299ee3ccb7126027d808b19df2d55a69601346f",
+            "file": "src/app/country/pages/by-capital-page/by-capital-page.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "by-capital-page",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./by-capital-page.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "countryResource",
+                    "defaultValue": "rxResource({\n    request: () => ({query: this.query()}),\n    loader: ({request}) => {\n      if (!request.query) return of([]);\n      return this.countryService.searchByCapital(request.query);\n    }\n  })",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "countryService",
+                    "defaultValue": "inject(CountryService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 19,
+                    "modifierKind": [
+                        123,
+                        148
+                    ]
+                },
+                {
+                    "name": "query",
+                    "defaultValue": "signal<string>('')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "CountrySearchInputComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "CountryListComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {ChangeDetectionStrategy, Component, inject, signal} from '@angular/core';\nimport {rxResource} from '@angular/core/rxjs-interop';\nimport {of} from 'rxjs';\nimport {CountrySearchInputComponent} from '../../components/country-search-input/country-search-input.component';\nimport {CountryListComponent} from '../../components/country-list/country-list.component';\nimport {CountryService} from '../../services/country.service';\n\n@Component({\n  selector: 'by-capital-page',\n  imports: [\n    CountrySearchInputComponent,\n    CountryListComponent\n  ],\n  templateUrl: './by-capital-page.component.html',\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport default class ByCapitalPageComponent {\n\n  private readonly countryService = inject(CountryService);\n  query = signal<string>('')\n\n  countryResource = rxResource({\n    request: () => ({query: this.query()}),\n    loader: ({request}) => {\n      if (!request.query) return of([]);\n      return this.countryService.searchByCapital(request.query);\n    }\n  });\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<country-search-input (search)=\"query.set($event)\" placeholder=\"Buscar por capital\"></country-search-input>\n@if (countryResource.error()) {\n  <h3 class=\"mt-3\">{{ countryResource.error() }}</h3>\n}\n@if (countryResource.hasValue()) {\n  <country-list [countries]=\"countryResource.value()!\"></country-list>\n}\n"
+        },
+        {
+            "name": "ByCountryPageComponent",
+            "id": "component-ByCountryPageComponent-bb4b16c34f2fb6fcea6c6575447a75fdfd5421b00dcdc0039606b3e9b03fac3695fe4efe2ad770785cb410012c09d8c2960a47a5f732af1395eaf43428d6ed0c",
+            "file": "src/app/country/pages/by-country-page/by-country-page.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "by-country-page",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./by-country-page.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "countryResource",
+                    "defaultValue": "rxResource({\n    request: () => ({query: this.query()}),\n    loader: ({request}) => {\n      if (!request.query) return of([]);\n      return this.countryService.searchByCountry(request.query);\n    }\n  })",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "countryService",
+                    "defaultValue": "inject(CountryService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 18,
+                    "modifierKind": [
+                        123,
+                        148
+                    ]
+                },
+                {
+                    "name": "query",
+                    "defaultValue": "signal<string>('')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "CountrySearchInputComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "CountryListComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {ChangeDetectionStrategy, Component, inject, signal} from '@angular/core';\nimport {rxResource} from '@angular/core/rxjs-interop';\nimport {of} from 'rxjs';\nimport {CountrySearchInputComponent} from '../../components/country-search-input/country-search-input.component';\nimport {CountryListComponent} from '../../components/country-list/country-list.component';\nimport {CountryService} from '../../services/country.service';\n\n@Component({\n  selector: 'by-country-page',\n  imports: [\n    CountrySearchInputComponent,\n    CountryListComponent\n  ],\n  templateUrl: './by-country-page.component.html',\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport default class ByCountryPageComponent {\n  private readonly countryService = inject(CountryService);\n  query = signal<string>('')\n\n  countryResource = rxResource({\n    request: () => ({query: this.query()}),\n    loader: ({request}) => {\n      if (!request.query) return of([]);\n      return this.countryService.searchByCountry(request.query);\n    }\n  });\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<country-search-input (search)=\"query.set($event)\" placeholder=\"Buscar por pais\"></country-search-input>\n@if (countryResource.error()) {\n  <h3 class=\"mt-3\">{{ countryResource.error() }}</h3>\n}\n@if (countryResource.hasValue()) {\n  <country-list [countries]=\"countryResource.value()!\"></country-list>\n}\n"
+        },
+        {
+            "name": "ByRegionPageComponent",
+            "id": "component-ByRegionPageComponent-1dacf24329f390698ca5e0c7c7673246112837195a420f2984ca66ec94308916711b6a13009a9918b441a533e03658dfc3a8d70d5b5887e545d9d29cb052225c",
+            "file": "src/app/country/pages/by-region-page/by-region-page.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "by-region-page",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./by-region-page.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "CountryListComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { ChangeDetectionStrategy, Component } from '@angular/core';\nimport {CountryListComponent} from '../../components/country-list/country-list.component';\n\n@Component({\n  selector: 'by-region-page',\n  imports: [\n    CountryListComponent\n  ],\n  templateUrl: './by-region-page.component.html',\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport default class ByRegionPageComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<country-list [countries]=\"[]\"></country-list>\n"
+        },
+        {
+            "name": "CountryLayoutComponent",
+            "id": "component-CountryLayoutComponent-cc3acecdd31267416dd36224d1d1120befdd43c1203faf56f21c0a5b55f992d0c6a943b951992911542dd98abcc80be7b0981ca99be2ffa4c347ebc8e78e9605",
+            "file": "src/app/country/layouts/country-layout/country-layout.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "country-layout",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./country-layout.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "RouterOutlet"
+                },
+                {
+                    "name": "TopMenuComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { ChangeDetectionStrategy, Component } from '@angular/core';\nimport {RouterOutlet} from '@angular/router';\nimport {TopMenuComponent} from '../../components/top-menu/top-menu.component';\n\n@Component({\n  selector: 'country-layout',\n  imports: [\n    RouterOutlet,\n    TopMenuComponent\n  ],\n  templateUrl: './country-layout.component.html',\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport default class CountryLayoutComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<top-menu></top-menu>\n<section class=\"px-4\">\n  <router-outlet></router-outlet>\n</section>\n"
+        },
+        {
+            "name": "CountryListComponent",
+            "id": "component-CountryListComponent-5c713968c537231f1b3b758612ecb69fe18aac16a3b53790ca1c8df9d24ad642fe2e64e7c75b5b490916a6cd5c8a6b427e5f9a20e5fac7abe64e327b3601535a",
+            "file": "src/app/country/components/country-list/country-list.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "country-list",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./country-list.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "countries",
+                    "defaultValue": "input.required<Country[]>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "DecimalPipe",
+                    "type": "pipe"
+                },
+                {
+                    "name": "RouterLink"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {ChangeDetectionStrategy, Component, input} from '@angular/core';\nimport {Country} from '../../interfaces/country.interface';\nimport {DecimalPipe} from '@angular/common';\nimport {RouterLink} from '@angular/router';\n\n@Component({\n  selector: 'country-list',\n  imports: [\n    DecimalPipe,\n    RouterLink\n  ],\n  templateUrl: './country-list.component.html',\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class CountryListComponent {\n  countries = input.required<Country[]>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<section class=\"mt-5\">\n  <table class=\"table table-ed mt-2 w-full\">\n    <thead>\n    <th>#</th>\n    <th>Icono</th>\n    <th>Bandera</th>\n    <th>Nombre</th>\n    <th>Capital</th>\n    <th>Poblacion</th>\n    <th></th>\n    </thead>\n    <tbody>\n      @for (country of countries(); track country.id; let index = $index){\n        <tr>\n          <td>{{index + 1}}</td>\n          <td>{{country.flag}}</td>\n          <td>\n            <img [src]=\"country.flagSvg\" [alt]=\"country.name\" class=\"w-10\">\n          </td>\n          <td>{{country.name}}</td>\n          <td>{{country.capital}}</td>\n          <td>\n            <span class=\"badge badge-secondary\">{{country.population | number}}</span>\n          </td>\n          <td>\n            <a class=\"link-primary cursor-pointer\" [routerLink]=\"['..', 'by', country.id]\">Mas informacion</a>\n          </td>\n        </tr>\n      }\n    </tbody>\n  </table>\n</section>\n"
+        },
+        {
+            "name": "CountryPageComponent",
+            "id": "component-CountryPageComponent-b18b58f9ad723780bfc5ad206140db09ca633dcbe1187010415ca8c8cbd113a7265d576f6f0358d43118e804f70aaeb47811f7fe26b37e7b7854df41b55452fa",
+            "file": "src/app/country/pages/country-page/country-page.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "country-page",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./country-page.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "activatedRoute",
+                    "defaultValue": "inject(ActivatedRoute)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 15,
+                    "modifierKind": [
+                        123,
+                        148
+                    ]
+                },
+                {
+                    "name": "countryCode",
+                    "defaultValue": "computed<string>(()=> {\n    const params = this.routeParams();\n    return params ? params['countryCode'] : '';\n  })",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "routeParams",
+                    "defaultValue": "toSignal(this.activatedRoute.params)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "CountryListComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {ChangeDetectionStrategy, Component, computed, inject} from '@angular/core';\nimport {toSignal} from '@angular/core/rxjs-interop';\nimport {ActivatedRoute} from '@angular/router';\nimport {CountryListComponent} from '../../components/country-list/country-list.component';\n\n@Component({\n  selector: 'country-page',\n  imports: [\n    CountryListComponent\n  ],\n  templateUrl: './country-page.component.html',\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport default class CountryPageComponent {\n  private readonly activatedRoute = inject(ActivatedRoute);\n  routeParams = toSignal(this.activatedRoute.params);\n  countryCode = computed<string>(()=> {\n    const params = this.routeParams();\n    return params ? params['countryCode'] : '';\n  });\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<h3>{{countryCode()}}</h3>\n<country-list [countries]=\"[]\"></country-list>\n"
+        },
+        {
+            "name": "CountrySearchInputComponent",
+            "id": "component-CountrySearchInputComponent-7fc6ecbf1bfd2d4bad0944c90014923f59bd33cdac8113aab81caa6a9024d920d8d9bd0ad13be6cb339993dadce5d5fcccdf6ada7090f4ddc7718181b71346b1",
+            "file": "src/app/country/components/country-search-input/country-search-input.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "country-search-input",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./country-search-input.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [
+                {
+                    "name": "search",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11,
+                    "required": false
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "placeholder",
+                    "defaultValue": "input<string>('Buscar')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                },
+                {
+                    "name": "search",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11,
+                    "required": false
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {ChangeDetectionStrategy, Component, input, output} from '@angular/core';\n\n@Component({\n  selector: 'country-search-input',\n  imports: [],\n  templateUrl: './country-search-input.component.html',\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class CountrySearchInputComponent {\n  placeholder = input<string>('Buscar');\n  search = output<string>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<section class=\"flex flex-row gap-2 mt-2\">\n  <input #txtSearch (keyup.enter)=\"search.emit(txtSearch.value)\" autofocus class=\"input input-bordered mr-2 w-56\"\n         [placeholder]=\"placeholder()\" type=\"text\">\n  <button (click)=\"search.emit(txtSearch.value)\" class=\"btn btn-primary\">Buscar</button>\n</section>\n"
+        },
+        {
+            "name": "FooterCustomComponent",
+            "id": "component-FooterCustomComponent-83de334d21b6a6dd9a73644d84bed4a856b5096495e282faedd0efc01336d9b7bb8844d74d3d965097d06d2ff1d5b86d2604ac448dd2196bbd578b94f0966839",
+            "file": "src/app/shared/components/footer-custom/footer-custom.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "footer-custom",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./footer-custom.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { ChangeDetectionStrategy, Component } from '@angular/core';\n\n@Component({\n  selector: 'footer-custom',\n  imports: [],\n  templateUrl: './footer-custom.component.html',\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class FooterCustomComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<footer class=\"footer sm:footer-horizontal bg-base-200 text-base-content p-10\">\n  <aside>\n    <svg\n      width=\"50\"\n      height=\"50\"\n      viewBox=\"0 0 24 24\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      fill-rule=\"evenodd\"\n      clip-rule=\"evenodd\"\n      class=\"fill-current\">\n      <path\n        d=\"M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z\"></path>\n    </svg>\n    <p>\n      ACME Industries Ltd.\n      <br />\n      Providing reliable tech since 1992\n    </p>\n  </aside>\n  <nav>\n    <h6 class=\"footer-title\">Services</h6>\n    <a class=\"link link-hover\">Branding</a>\n    <a class=\"link link-hover\">Design</a>\n    <a class=\"link link-hover\">Marketing</a>\n    <a class=\"link link-hover\">Advertisement</a>\n  </nav>\n  <nav>\n    <h6 class=\"footer-title\">Company</h6>\n    <a class=\"link link-hover\">About us</a>\n    <a class=\"link link-hover\">Contact</a>\n    <a class=\"link link-hover\">Jobs</a>\n    <a class=\"link link-hover\">Press kit</a>\n  </nav>\n  <nav>\n    <h6 class=\"footer-title\">Legal</h6>\n    <a class=\"link link-hover\">Terms of use</a>\n    <a class=\"link link-hover\">Privacy policy</a>\n    <a class=\"link link-hover\">Cookie policy</a>\n  </nav>\n</footer>\n"
+        },
+        {
+            "name": "HomePageComponent",
+            "id": "component-HomePageComponent-852bba8fc756158ad09919d059d2882f81c575cbe88efe8c299f3bc52551bc91ec6e67afe8f8d00f824bca702c0b59b62741832cf84eadd1d957c42e4fca6589",
+            "file": "src/app/shared/pages/home-page/home-page.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "home-page",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./home-page.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "RouterLink"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { ChangeDetectionStrategy, Component } from '@angular/core';\nimport {RouterLink} from '@angular/router';\n\n@Component({\n  selector: 'home-page',\n  imports: [RouterLink],\n  templateUrl: './home-page.component.html',\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class HomePageComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div\n  class=\"hero min-h-screen\"\n  style=\"background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);\">\n  <div class=\"hero-overlay\"></div>\n  <div class=\"hero-content text-neutral-content text-center\">\n    <div class=\"max-w-md\">\n      <h1 class=\"mb-5 text-5xl font-bold\">Aplicacion de paises</h1>\n      <p class=\"mb-5\">\n        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem\n        quasi. In deleniti eaque aut repudiandae et a id nisi.\n      </p>\n      <button class=\"btn btn-primary\" routerLink=\"country\">Empezar</button>\n    </div>\n  </div>\n</div>\n"
+        },
+        {
+            "name": "TopMenuComponent",
+            "id": "component-TopMenuComponent-d8fbc77854ae3facecd1ec8ad8a8a478ffa67559d6a436c3c663307fa9f643209166eb9de5a91f9f1996200e58b798f3aa2cf45f999641dc190d305243a04249",
+            "file": "src/app/country/components/top-menu/top-menu.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "top-menu",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./top-menu.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "RouterLinkActive"
+                },
+                {
+                    "name": "RouterLink"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { ChangeDetectionStrategy, Component } from '@angular/core';\nimport {RouterLink, RouterLinkActive} from '@angular/router';\n\n@Component({\n  selector: 'top-menu',\n  imports: [\n    RouterLinkActive,\n    RouterLink\n  ],\n  templateUrl: './top-menu.component.html',\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class TopMenuComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<nav class=\"p-4 w-full\">\n  <ul class=\"menu bg-base-200 sm:menu-horizontal rounded-box\">\n    <li>\n      <a class=\"btn\" routerLink=\"by-capital\" routerLinkActive=\"btn-primary\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\"><path fill=\"none\" stroke=\"currentColor\" d=\"M.5 15.5v-2.25S6 10.5 9.75 9.5V4.211c0-.79.23-1.565.707-2.194c.364-.48.828-1.052 1.293-1.517h.5c.465.465.93 1.037 1.293 1.517c.478.629.707 1.404.707 2.194V9.5c3.75 1 9.25 3.75 9.25 3.75v2.25s-5.5-1-9.25-1c0 0-.5 2.28-.5 6.5c0 0 1.25.75 2.25 1.75v.5S13.75 23 12 23s-4 .25-4 .25v-.5c1-1 2.25-1.75 2.25-1.75c0-4.22-.5-6.5-.5-6.5c-3.75 0-9.25 1-9.25 1Z\" stroke-width=\"1\"/></svg>\n        Por capital\n      </a>\n    </li>\n    <li>\n      <a class=\"btn\" routerLink=\"by-country\" routerLinkActive=\"btn-primary\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\"><path fill=\"none\" stroke=\"currentColor\" d=\"M4 12h2m12 0h2M.5 16.5V20H1a43 43 0 0 1 3-.37M.5 16.5H1a3 3 0 0 1 3 3v.13M.5 16.5v-9M4 19.63a95 95 0 0 1 8-.38c2.134 0 5.281.127 8 .38m0 0a43 43 0 0 1 3 .37h.5v-3.5M20 19.63v-.13a3 3 0 0 1 3-3h.5m0 0v-9m0 0V4H23a43 43 0 0 1-3 .37m3.5 3.13H23a3 3 0 0 1-3-3v-.13m0 0a95 95 0 0 1-8 .38a95 95 0 0 1-8-.38m0 0A43 43 0 0 1 1 4H.5v3.5M4 4.37v.13a3 3 0 0 1-3 3H.5m11.5 7a2.5 2.5 0 1 1 0-5a2.5 2.5 0 0 1 0 5Z\" stroke-width=\"1\"/></svg>\n        Por Pais\n      </a>\n    </li>\n    <li>\n      <a class=\"btn\" routerLink=\"by-region\" routerLinkActive=\"btn-primary\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\"><path fill=\"none\" stroke=\"currentColor\" d=\"M9.5.5V2A1.5 1.5 0 0 0 11 3.5h2A1.5 1.5 0 0 0 14.5 2V.5m-4.5 20h4M4.5.75S5 7.492 5 12s-.5 11.25-.5 11.25v.25h15v-.25S19 16.508 19 12S19.5.75 19.5.75V.5h-15z\" stroke-width=\"1\"/></svg>\n        Por region\n      </a>\n    </li>\n  </ul>\n</nav>\n"
+        }
+    ],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "appConfig",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.config.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "ApplicationConfig",
+                "defaultValue": "{\n  providers: [provideZoneChangeDetection({eventCoalescing: true}), provideRouter(routes), provideHttpClient(withFetch())]\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.development.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  apiUrl: 'https://restcountries.com/v3.1'\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  apiUrl: 'https://restcountries.com/v3.1'\n}"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/app/app.config.ts": [
+                {
+                    "name": "appConfig",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.config.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ApplicationConfig",
+                    "defaultValue": "{\n  providers: [provideZoneChangeDetection({eventCoalescing: true}), provideRouter(routes), provideHttpClient(withFetch())]\n}"
+                }
+            ],
+            "src/environments/environment.development.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.development.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  apiUrl: 'https://restcountries.com/v3.1'\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  apiUrl: 'https://restcountries.com/v3.1'\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.config.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "appConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/components/country-list/country-list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CountryListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/components/country-search-input/country-search-input.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CountrySearchInputComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/components/top-menu/top-menu.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TopMenuComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/country.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Country",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "CapitalInfo",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Car",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "CoatOfArms",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Currencies",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Demonyms",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Eng",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Eur",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Flags",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Gini",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Idd",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Languages",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Maps",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Name",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "NativeName",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "PostalCode",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "RestCountries",
+                "coveragePercent": 0,
+                "coverageCount": "0/36",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/interfaces/rest-countries.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Translation",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/layouts/country-layout/country-layout.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CountryLayoutComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/mappers/country-mapper.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "CountryMapper",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/pages/by-capital-page/by-capital-page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ByCapitalPageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/pages/by-country-page/by-country-page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ByCountryPageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/pages/by-region-page/by-region-page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ByRegionPageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/pages/country-page/country-page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CountryPageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/country/services/country.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "CountryService",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/footer-custom/footer-custom.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "FooterCustomComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/pages/home-page/home-page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HomePageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.development.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

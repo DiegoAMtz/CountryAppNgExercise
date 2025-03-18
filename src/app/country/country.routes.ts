@@ -7,7 +7,7 @@ export const countryRoutes: Routes = [
     children: [
       {
         path: 'by-capital',
-        loadComponent: () => import('./pages/by-capital-page/by-capital-page.component'),
+        loadComponent: () => import('./pages/by-capital-page/by-capital-page.component')
       },
       {
         path: 'by-country',
@@ -15,7 +15,7 @@ export const countryRoutes: Routes = [
       },
       {
         path: 'by-region',
-        loadComponent: () => import('./pages/by-region-page/by-region-page.component'),
+        loadComponent: () => import('./pages/by-region-page/by-region-page.component')
       },
       {
         path: 'by/:countryCode',
